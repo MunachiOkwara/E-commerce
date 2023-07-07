@@ -1,0 +1,129 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+.mainf{
+    height: 90vh;
+    width: 100%;
+    background-color:rgb(6, 9, 48) ;
+}
+
+.topfot{
+    height: 30%;
+    width: 100%;
+    /* background-color: darkgreen; */
+    display: flex;
+}
+
+ .high{
+    height: 100%;
+    width: 30%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.mid{
+    height: 100%;
+    width: 40%;
+    /* background-color: rgb(255, 94, 0); */
+    display: flex;
+    flex-direction: column;
+}
+
+.textt{
+    height: 50%;
+    width: 100%;
+    /* background-color: aliceblue; */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cont{
+    height: 50%;
+    width: 100%;
+    /* background-color: rgb(175, 18, 162); */
+    display: flex;
+    justify-content: center;
+}
+.low{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    /* background-color: rgb(255, 0, 85); */
+} 
+
+.loww{
+    height: 50%;
+    width: 100%;
+    /* background-color: darkkhaki; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 10px; */
+}
+.downfot{
+    height: 70%;
+    width: 100%;
+    background-color: rgb(28, 31, 75);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}  
+
+.first{
+    height: 100%;
+    width: 30%;
+    /* background-color: darkcyan; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    /* gap: 5px; */
+}
+
+.first p{
+    color:white;
+    font-family: sans-serif;
+    font-size: 15px;
+ 
+}
+.second{
+    height: 100%;
+    width: 30%;
+    /* background-color: rgb(185, 223, 80); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* gap: 5px; */
+}
+
+.second p{
+    color: white;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+.third{
+    height: 100%;
+    width: 30%;
+    /* background-color: rgb(148, 243, 148); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* gap: 5px; */
+}
+
+.third p{
+    color: white;
+    font-family: sans-serif;
+    font-size: 15px;
+}

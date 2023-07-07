@@ -1,0 +1,367 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+   /* background-image: url(./assets/pin6.jpg);  */
+   background-color: rgb(255,208,188);  
+
+}
+
+
+
+.mainbody{
+    height: max-content;
+    width: 100%;
+   }
+
+   
+.header{
+    width: 100%;
+    height: 10vh;
+    background-color:rgb(6, 9, 48);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 99999999;
+    
+}
+
+.bottle{
+  width: 90px;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  border:1px solid rgb(41, 38, 38);
+  font-size: 17px;
+  color:black;
+ cursor: pointer;
+ background:white;
+ font-family: Monotype Corsiva;
+ font-weight: 800;
+}
+
+body:has(input[type=checkbox]:checked){
+  background-color: #413a3a;
+}
+
+.header button:hover{
+  cursor: pointer;
+  background-color:white;
+
+} 
+
+
+
+.imgholder h1{
+  font-weight: 800;
+  font-size: 40px;
+  font-family: Monotype Corsiva;
+  color: white;
+  cursor: pointer;
+  /* background-color: chartreuse; */
+}
+
+
+.shop{
+  width: 100px;
+  height: 50px;
+  object-fit: contain; 
+  position: absolute;
+  left: 5px;
+  cursor: pointer;
+  /* background-color: blue; */
+} 
+
+
+
+.invincible{
+    width: 15%;
+    height: 100%;
+    /* background-color:white; */
+    /* padding-left: 40px;
+    padding-top: 18px; */
+}
+
+
+.text{
+    width: 40%;
+    height: 100%;
+    /* background-color: white; */
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+    
+}
+
+.text h3{
+    font-size: 17px;
+    font-family: Monotype Corsiva;
+    color: white;
+    cursor: pointer;
+    
+}
+
+.ui{
+  height: 80vh;
+  width: 100%;
+  /* background-color: rgb(255,208,188); */
+  display: flex;
+}
+
+.leftui{
+  height: 100%;
+  width: 40%;
+  /* background-color: crimson; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  gap: 10px;
+  
+  
+}
+
+.bigtext{
+  height: 200px;
+  width: 70%;
+  /* background-color: black; */
+  position: absolute;
+  top: 5%;
+  font-family:   Monotype Corsiva;
+  font-size: 15px;
+letter-spacing: 0px;
+word-spacing: 0px;
+  /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
+}
+
+
+.smalltext{
+  height: 140px;
+  width: 70%;
+  top: 40%;
+  position: absolute;
+  font-family:   Monotype Corsiva;
+  text-decoration-style: none;
+  font-size: 12px;
+letter-spacing: 0px;
+word-spacing: 0px;
+  /* background-color: rgb(28, 190, 177); */
+  /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
+}
+
+.button{
+  height: 90px;
+  width: 50%;
+  /* background-color: black; */
+  position: absolute;
+  left: 15%;
+  bottom: 7%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+
+.button button{
+  height: 70px;
+  width: 200px;
+  background-color: rgb(6, 9, 48);
+  border: none;
+  color: white;font-family: Monotype Corsiva;
+  font-size: 20px;
+  border-radius: 5px;
+  
+}
+
+
+.rightui{
+  height: 100%;
+  width: 60%;
+  /* background-color: hotpink; */
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.pic{
+  height: 85%;
+  width: 68%;
+  background-color: rgb(6, 9, 48);
+  position: absolute;
+  left: 5%;
+  bottom: 10%;
+  border-radius: 50px;
+  box-shadow: 5px 15px 20px rgb(233, 227, 227);
+
+}
+.pic img{
+  width: 80%;
+  height: 100%;
+}
+
+.loadd{
+  color: aliceblue;
+  position: absolute;
+  left: 40%;
+  bottom: 50%;
+  width: 100%;
+  transition: all 0.8s ease;
+  /* transform: rotate("0 deg") ; */
+  /* transform: rotate("360deg") ; */
+}
+
+ /* .loadd{ 
+ animation: loadd infinite 20s linear;
+} */
+
+
+.arrow{
+  height: 70px;
+  width: 100px;
+  /* background-color: darkgreen; */
+  position: absolute;
+  right: 15%;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftarrow{
+ height:40px ;
+ width: 100%;
+ color: white;
+ object-fit: contain;
+ /* background-color: black; */
+/* color: #333333; */
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+
+.card{
+  height: max-content;
+  width: 100%;
+  /* background-color: deeppink; */
+  display: flex;
+   justify-content: center; 
+   align-items: center; 
+  /* flex-direction: column; */
+  gap: 10px;
+  flex-wrap: wrap;
+  padding-top: 100px;
+  
+  
+  
+  
+}
+
+.cardwrapper{
+  height: 450px;
+  width: 330px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  border-radius: 15px 15px 0 0;
+  /* animation: animation 15s liner infinite; */
+  /* transform-style: preserve-3d; */
+  box-shadow: 5px 15px 20px rgb(233, 227, 227);
+  cursor: pointer;
+  transition: all 700ms ease-out;
+  transform: scale(1);
+  
+
+}
+
+.cardwrapper:hover{
+  background: whitesmoke;
+  transform: scale(1.1);
+  
+}
+
+.top{
+  height: 60% ;
+  width: 95%;
+  /* background-color: crimson */
+  border-radius: 15px ;
+
+}
+
+.top img{
+  height: 100%;
+  width: 100%;
+
+}
+
+
+
+
+.down{
+  height: 30% ;
+  width: 95%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding: 10px;
+  position: relative;
+  border-radius: 15px 15px 0 0 ;
+  text-decoration: none;
+  
+}
+
+.down h4{
+  font-size: 20px;
+  font-family: monospace;
+  text-decoration: none;
+}
+
+.down button{
+  height: 30px;
+  width: 100px;
+  position: absolute;
+  top: 80%;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  background:rgb(6, 9, 48);
+  color: white;
+  font-size: 15px;
+  font-weight: 800;
+  font-family: monospace;
+  border: none;
+  right: 0;
+}
+
+.down h4{
+  font-size: 18px;
+  font-weight: 800;
+  font-family: monospace;
+}
+
+.load{
+  color: aliceblue ;
+  font-size: 50px;
+  font-weight: 800;
+  font-family: monospace;
+}
+
+
+a.active{
+  background-color:rgb(255,208,188);
+  /* font-size: 40px; */
+}
