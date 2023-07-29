@@ -3,11 +3,12 @@ import axios from 'axios'
 import { Link } from "react-router-dom";
 import { useContext, useReducer } from "react";
 import { ThemeContext } from "../ContextApi/Context";
+import tree from '../assets/tree.jpg'
 
 
 
 const Card =()=>{
-   
+  const {state, dispatch} = useContext(ThemeContext)
   // const [loading, setLoading] = useState(false);
     const [data, setData] = useState([]);
     function handleAddCart(id,name,price,image){
@@ -19,22 +20,15 @@ const Card =()=>{
           image: image
       }]
   }
-    //  const initialState ={
-   //    cartItems: []
-   //  }
-
-   //  const cartReducer = (state, action)=>{
-   //      switch(action.type){
-   //       case 'ADD_TO_CART':
-   //          return{
-   //             ...state,
-   //             cartItems:[...state.cartItems,action.payload],
-   //          };
-   //          default: return state
-   //      }
-   //  }
-
-  // console.log(data)
+  
+  const addToCart=(id, title, price, image)=>{
+    dispatch(
+        {
+            type: "added",
+            id, title, price, image
+        }
+    )
+  }
 
     const url = 'https://fakestoreapi.com/products?limit=20'
 
@@ -43,7 +37,7 @@ const Card =()=>{
     .then(res=> setData(res.data))
   }
 
-  const {state, dispatch} = useContext(ThemeContext)
+  
     //   fetch (url)
     //  .then(res=> res.json())
     //  .then(res=> setData(res))
@@ -59,7 +53,9 @@ const Card =()=>{
   <>
           
   
-  <div className="load">
+  <div className="load" >
+  
+ 
   {                                       
     data.length ? null : "Loading......"
   }
@@ -68,19 +64,22 @@ const Card =()=>{
             {
        data?.map((props)=>(
         
-        <div key={props.id} className="cardwrapper" style={{backgroundColor: state? 'black' : null}}>
+        <div key={props.id} className="cardwrapper" >
+           
         <div className="top">
          <img src={props.image} alt="" /></div>
     <div className="down">
       <h4 >Title:{props.title}</h4>
       <h4>Category:{props.category}</h4>
       <h4>Price:${props.price}</h4>
-      <button onClick={()=>handleAddCart(props.id,props.name,props.image,props.price)}>Add Cart</button>
-       <Link to= {`/detail/${props.id}`} >detail</Link>
+      
+      <button onClick={()=>addToCart(props.id,props.title,props.price,props.image)}>Add Cart</button>
+       <Link className="link" to= {`/detail/${props.id}`} >detail</Link>
       </div>
+      {/* <img src={tree} alt="tree"></img> */}
       </div>
         
-       
+        
            
     
         )

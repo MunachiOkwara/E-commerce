@@ -1,10 +1,14 @@
-import {  useContext } from "react";
+import {  useContext, useState } from "react";
 import {BsMoonFill, BsSunFill } from "react-icons/bs";
 import { ThemeContext } from '../ContextApi/Context'
 
 const Theme = () =>{
     const { state, Toggle} = useContext(ThemeContext);
+    // const [showMenu, setShowmenu] = useState(false);
     
+    // const toggleMenu=()=>{
+    //     setShowmenu(!showMenu)
+    // }
     return(
         <div>
             {state ? (

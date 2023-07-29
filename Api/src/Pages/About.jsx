@@ -5,7 +5,7 @@ const About = ()=>{
     const {state}= useContext(ThemeContext)
     return(
         <>
-        <div className="about" style={{backgroundColor: state? "black" : null}}>
+        <div className="about" style={{backgroundColor: state? "  #68B984" : null}}>
             <div className="top"><h1 style={{fontFamily: ' Monotype Corsiva',fontSize:'40px'}}>About us</h1></div>
             <div className="down">
                 <p>Our vision</p>

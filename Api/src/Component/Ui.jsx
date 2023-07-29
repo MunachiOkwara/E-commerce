@@ -72,8 +72,8 @@ const Ui =()=>{
     }
     <img src= {NewData[count % NewData.length]?.image} alt="" /></div>
     <div className="arrow">
-    <div className="leftarrow"><BsFillArrowLeftCircleFill onClick={Ui}/></div>
-    <div className="leftarrow"> <BsFillArrowRightCircleFill onClick={AddCount}/></div>
+    <div className="leftarrow"><BsFillArrowLeftCircleFill className="row" onClick={Ui}/></div>
+    <div className="leftarrow"> <BsFillArrowRightCircleFill className="row" onClick={AddCount}/></div>
     </div>
     </div>
     </div>

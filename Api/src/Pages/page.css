@@ -73,3 +73,46 @@
     /* background-color: rgb(0, 10, 100); */
 }
 
+.empty{
+    color: white;
+    font-size: 40px;
+    font-family:   sans-serif;
+    text-shadow: 8px 4px #4C4B16;
+}
+
+.myholder{
+    height: 20vh;
+    width: 100%;
+    /* background-color: black; */
+    display: flex;
+    justify-content: center;
+}
+
+.totalholder{
+    min-height: 20vh; 
+    width: 70%;
+    /* background-color: antiquewhite; */
+}
+
+.total{
+    text-align: center;
+    font-size: 1.0em;
+    color: black;
+    text-shadow: 2px 4px white;
+}
+
+.det{
+    /* background-color: blue; */
+}
+
+.click{
+    border-radius: 5px;
+    opacity: 0.9;
+}
+.onclick{
+    border-radius: 5px;
+}
+
+.delete{
+    font-size: 25px;
+}
